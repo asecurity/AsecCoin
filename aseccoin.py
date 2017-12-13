@@ -13,8 +13,10 @@ request = Request('https://bittrex.com/api/v1.1/public/getmarketsummary?market=b
 try:
     response = urlopen(request)
     html = response.read()
-    print html
 
     print "Attempting to print JSON formatted...\n"
+    #print json.dumps(html, separators=(',', ': '))
+    parsed_json = json.loads(html)
+    print(parsed_json['success'])
 except URLError, e:
     print 'Error processing:', e
