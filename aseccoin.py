@@ -14,8 +14,12 @@ try:
         print "Attempting to print JSON formatted...\n"
         result = loadjson['result']
 
-        result1 = json.dumps(result)
-        print result1
+        print("string value: %s" %result[0]["MarketName"])
+        #print result
+
+        #print(json.dumps(result, ensure_ascii=True, indent=4, sort_keys=True, separators=(',', ':')))
+        #var = json.dumps(result, ensure_ascii=True, indent=4, sort_keys=True, separators=(',', ':'))
+        #test = var['Ask']
     else: 
         print "Parsing failed..."
 
