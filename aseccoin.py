@@ -21,9 +21,6 @@ try:
         print("High:   %f" %result[0]["High"])
         print("Low:    %f" %result[0]["Low"])
 
-        #print(json.dumps(result, ensure_ascii=True, indent=4, sort_keys=True, separators=(',', ':')))
-        #var = json.dumps(result, ensure_ascii=True, indent=4, sort_keys=True, separators=(',', ':'))
-        #test = var['Ask']
     else: 
         print "Parsing failed..."
 
