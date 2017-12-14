@@ -14,7 +14,7 @@ try:
     validate_resp = loadjson['success']
 
     if validate_resp == True:
-        print "AsecCoin:\n"
+        print("AsecCoin:\n")
         result = loadjson['result']
 
         print("Market: %s" %result[0]["MarketName"])
@@ -25,7 +25,7 @@ try:
         print("Low:    %f" %result[0]["Low"])
 
     else: 
-        print "Parsing failed..."
+        print("Parsing failed...")
 
 except URLError, e:
     print 'Error processing:', e
